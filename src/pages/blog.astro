@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Blog";
 ---
 
 <html lang="en">
@@ -7,7 +8,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         
@@ -16,10 +17,13 @@
     <a href="/blog/">Blog</a>
 
 		<h1>My fisrt Astro Site!</h1>
-        <h1>Blog</h1>
+        <h1>{pageTitle}</h1>
         <h2>This is my first Post!</h2>
 
-        <p>This is my first Astro Blog and I build it with the help of the Astro tutorial.</p>
-        <p>This is the third page I build, after i deplyed that via Github and Netifly!</p>
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2/">Post 2</a></li>
+            <li><a href="/posts/post-3/">Post 3</a></li>
+        </ul>
 	</body>
 </html>
